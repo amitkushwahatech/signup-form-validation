@@ -13,9 +13,11 @@ function SignForm() {
     e.preventDefault();
     if (email && password && confirmPassword) {
       if (
-        emailError === "" &&
+        (emailError === "" &&
         passwordError === "" &&
-        confirmPasswordError === ""
+        confirmPasswordError !== "")&&(email !== "" &&
+        password === "" &&
+        confirmPassword !== "")
       ) {
         alert("Form submitted successfully");
         setEmail("");
