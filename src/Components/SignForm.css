@@ -1,3 +1,6 @@
+body{
+    background:#CCF381;
+}
 form{
     display: flex;
     flex-direction: column;
