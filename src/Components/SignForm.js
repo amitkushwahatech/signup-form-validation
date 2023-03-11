@@ -15,7 +15,7 @@ function SignForm() {
       if (
         (emailError === "" &&
         passwordError === "" &&
-        confirmPasswordError !== "")&&(email !== "" &&
+        confirmPasswordError === "")&&(email !== "" &&
         password !== "" &&
         confirmPassword !== "")
       ) {
